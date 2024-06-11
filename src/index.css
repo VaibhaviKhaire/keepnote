@@ -1,13 +1,140 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* File: styles.css */
+
+/* Header Component */
+.header {
+  background-color: #ffc500c2;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  margin-left: 10px;
 }
+
+/* Footer Component */
+
+/* Note Component */
+.note {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px ;
+  margin-left:20px;
+  width: 20%;
+  display:inline-block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.note h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.note p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+.btn {
+  background-color: transparent;
+  border-radius: 10;
+  outline:#0056b3;
+  cursor: pointer;
+}
+
+.deleteIcons {
+  color: #f44336;
+  font-size: 24px;
+}
+
+/* CreateNote Component */
+.main_note {
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.main_note form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_note input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 10px;
+  font-size: 18px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.main_note input:focus {
+  border-bottom: 2px solid #007bff;
+}
+
+.main_note textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #eee;
+  font-size: 18px;
+  resize: none;
+  height: 80px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.main_note textarea:focus {
+  border-bottom: 2px solid #007bff;
+}
+
+/* Container for Notes */
+.notesContainer {
+  display: flex;
+  flex-direction: row; /* Display items vertically */
+  flex-wrap: wrap;
+  align-items: center; /* Center items horizontally */
+  gap: 20px; /* Optional: Add some spacing between the notes */
+  width: 100%;
+}
+
+
+.footer {
+  background-color: #ffc500c2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}/* Plus Button */
+.plusButton {
+  background-color:orange; /* Green background color */
+  color: orange; /* Text color */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 50%; /* Border radius to create a circle */
+  cursor: pointer;
+  outline: none;
+  margin-top: 10px;
+  align-self: flex-end;
+  transition: background-color 0.3s;
+}
+
+.plusButton:hover {
+  background-color:orange; /* Darker green color on hover */
+}
+
